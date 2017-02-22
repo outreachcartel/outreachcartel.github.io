@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--if lt IE 9
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js')
+    | \
+    script(src='scripts/respond.js')
+    script(src='scripts/html5shiv.js')
+    -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/carouselFade.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/347a1bde59.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/dashboard.css" type="text/css">
+    <link rel="stylesheet" href="css/client.css" type="text/css">
+    <title>Outreach Cartel</title>
+  </head>
+  <body>
+    <section id="header">
+      <div class="sideNav">
+        <input id="ico" type="checkbox" style="display: none"><span class="sideIcon aleft">
+          <label for="ico">
+            <li class="fa fa-bars"></li>
+          </label></span>
+        <div class="navLogo aleft"><img src="images/logo.png"></div>
+        <div class="sideBar aleft">
+          <div class="userDetail visible-xs"><img src="images/BillGates.jpg">
+            <h3 class="text-left name">Fahad Moten</h3>
+          </div>
+          <div class="linkBar">
+            <div class="visible-xs"><a>
+                <div class="links">
+                  <li class="fa fa-usd"></li> Coins <small><small> 259</small></small>
+                </div></a><a>
+                <div class="links">
+                  <li class="fa fa-file-o"></li> Tasks <small><small> 10</small></small>
+                </div></a><a href="">
+                <div class="links">
+                  <li class="fa fa-user-o"></li>  Profile
+                </div></a><a href="">
+                <div class="links">
+                  <li class="fa fa-gear"></li>  Settings
+                </div></a><a href="">
+                <div class="links">
+                  <li class="fa fa-power-off"></li>  Log Out
+                </div></a></div><a href="advertiser.html">
+              <div class="links">
+                <li class="fa fa-dashboard"></li>  Dashboard
+              </div></a><a href="campaings.html">
+              <div class="links">
+                <li class="fa fa-file trs"></li>  Campaings
+                <div class="dropdown i"><a href="createCampaing.html">
+                    <div class="item">Create</div></a>
+                  <div class="item">All Campaings</div>
+                  <div class="item">Active</div>
+                  <div class="item">Pending</div>
+                  <div class="item">Finished</div>
+                </div>
+              </div></a><a>
+              <div class="links">
+                <li class="fa fa-area-chart"></li>  Analytics
+              </div></a><a href="deposit.html">
+              <div class="links">
+                <li class="fa fa-usd"></li>  Deposit
+              </div></a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-fixed-top">
+        <div class="container i">
+          <ul class="float-right zer0">
+            <div class="i hidden-xs">
+              <li class="float-left link">O`Coins : 259</li>
+              <li class="float-left link">tasks Availble : 10</li>
+              <li class="dropdown float-left link"><img class="profile" src="images/BillGates.jpg"> Fahad <strong class="caret"></strong>
+                <ul class="menu">
+                  <li>Profile</li>
+                  <li>Settings</li>
+                  <li>Logout</li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="body">
+      <div class="container lc">
+        <div class="bg">
+          <h1>Hello,<br> Welcome Back Fahad</h1>
+        </div>
+        <ol class="breadcrumb">
+          <li><a href="advertiser.html"><span class="fa fa-home"></span> Home</a></li>
+          <li><a href="campaings.html"><span class="fa fa-file"></span> Campaings</a></li>
+          <li class="active"><a href="createCampaing.html"> Create Campaings</a></li>
+        </ol>
+        <div class="zer0 i">
+          <canvas id="myChart"></canvas>
+          <div class="pies i chartBase">
+            <div class="pie-chart float-left">
+              <canvas id="device" width="450" height="450"></canvas>
+            </div>
+            <div class="pie-chart float-left">
+              <canvas id="mobile" width="450" height="450"></canvas>
+            </div>
+            <div class="pie-chart float-left">
+              <canvas id="desktop" width="450" height="450"></canvas>
+            </div>
+            <div class="pie-chart float-left">
+              <canvas id="gender" width="450" height="450"></canvas>
+            </div>
+          </div>
+          <div class="zer0 i">
+            <div class="pies i chartBase">
+              <div class="pie-chart float-left">
+                <canvas id="device1" width="450" height="450"></canvas>
+              </div>
+              <div class="pie-chart float-left">
+                <canvas id="mobile1" width="450" height="450"></canvas>
+              </div>
+              <div class="pie-chart float-left">
+                <canvas id="desktop1" width="450" height="450"></canvas>
+              </div>
+              <div class="pie-chart float-left">
+                <canvas id="gender1" width="450" height="450"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/Chart.bundle.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/ChartData.js"></script>
+  </body>
+</html>

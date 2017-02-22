@@ -1,0 +1,44 @@
+doctype html
+html(dir='ltr', lang='en-US')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic', rel='stylesheet', type='text/css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    //if lt IE 9
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js')
+      script(src='scripts/respond.js')
+      script(src='scripts/html5shiv.js')
+    link(rel='icon', href='images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='css/bootstrap.css', type='text/css')
+    link(rel='stylesheet', href='css/style.css', type='text/css')
+    link(rel='stylesheet', href='css/user.css', type='text/css')
+    link(rel='stylesheet', href='css/carouselFade.css', type='text/css')
+    link(rel='stylesheet', href='css/animate.css', type='text/css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/347a1bde59.css')
+    title Outreach Cartel | Sign Up
+  body
+    section#header
+        .navbar.navbar-fixed-top
+            .container
+                .navbar-header
+                    button.navbar-toggle(data-target='#ex', data-toggle='collapse')
+                        i.fa.fa-bars
+                    a.navbar-brand.zer0(href='index.html')
+                        img(src='images/logo.png')
+                #ex.collapse.navbar-collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li.active
+                            a(href='#/') Home
+                        li
+                            a(href='#/') Benifits
+                        li
+                            a(href='#/') Services
+                        li
+                            a(href='#/') Contact US
+                        li
+                            a(href='#/') Sign In
+    section#form
+      .base
+    script(src='js/jquery.js')
+    script(src='js/s.js')

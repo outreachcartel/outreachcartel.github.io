@@ -1,0 +1,142 @@
+doctype html
+html(dir='ltr', lang='en-US')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic', rel='stylesheet', type='text/css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    //if lt IE 9
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js')
+      | \
+      script(src='scripts/respond.js')
+      script(src='scripts/html5shiv.js')
+    link(rel='icon', href='images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='css/bootstrap.css', type='text/css')
+    link(rel='stylesheet', href='css/style.css', type='text/css')
+    link(rel='stylesheet', href='css/carouselFade.css', type='text/css')
+    link(rel='stylesheet', href='css/dashboard.css', type='text/css')
+    link(rel='stylesheet', href='css/animate.css', type='text/css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/347a1bde59.css')
+    link(rel='stylesheet', href='css/animate.css', type='text/css')
+    title Outreach Cartel
+  body
+    section#header
+      .sideNav
+        input#ico(type='checkbox', style='display: none;')
+        span.sideIcon.aleft
+          label(for='ico')
+            li.fa.fa-bars
+        .navLogo.aleft
+          img(src='images/logo.png')
+        .sideBar.aleft
+          .userDetail.visible-xs
+            img(src="images/BillGates.jpg")
+            h3.text-left.name Fahad Moten
+          .linkBar
+            .visible-xs
+              a
+                .links
+                  li.fa.fa-usd
+                  |  Coins 
+                  small
+                    small  259
+    
+              a
+                .links
+                  li.fa.fa-file-o
+                  |  Tasks 
+                  small
+                    small  10
+    
+              a(href='dashboard.html')
+                .links
+                  li.fa.fa-user-o
+                  |   Profile
+              
+              a(href='dashboard.html')
+                .links
+                  li.fa.fa-gear
+                  |   Settings
+              
+              a(href='dashboard.html')
+                .links
+                  li.fa.fa-power-off
+                  |   Log Out
+            a(href='dashboard.html')
+              .links
+                li.fa.fa-home
+                |   Home
+            a(href='tasks.html')
+              .links
+                li.fa.fa-cog.trs
+                |   Task
+            a(href='activity.html')
+              .links
+                li.fa.fa-database
+                |   Activity
+            a(href='withdraw.html')
+              .links
+                li.fa.fa-usd
+                |   Withdraw
+      .navbar.navbar-fixed-top
+        .container.i
+          ul.float-right.zer0
+            .i.hidden-xs
+              li.float-left.link O`Coins : 259
+              li.float-left.link tasks Availble : 10
+              li.dropdown.float-left.link
+                img.profile(src='images/BillGates.jpg')
+                |  Fahad 
+                strong.caret
+                ul.menu
+                  li Profile
+                  li Settings
+                  li Logout
+    section
+      #fb-root
+      section#body
+        .container.lc
+          .bg
+            h1
+              | Hello,
+              br
+              |  Welcome Back Fahad
+          ol.breadcrumb
+            li
+              a(href='dashboard.html')
+                span.fa.fa-home
+                |  Home
+            li.active
+              a(href='tasks.html')
+                span.fa.fa-cog
+                |  Tasks
+          .i
+            ul.tSideBar
+              a(href='tasks.html')
+                li Facebook Likes
+              a(href='tasks-fbshare.html')
+                li Facebook Share
+              a(href='twitter-follow.html')
+                li.active Twitter Follow
+              a(href='twitter-tweet.html')
+                li Twitter Retweet
+              a(href='youtube.html')
+                li Youtube Videos
+              a(href='website.html')
+                li Visit Website
+            .tSideBody.i
+              .taskbody
+                .bgHold
+                  img(src='images/v/w4.jpg')
+                  .tbg
+                .tHeader
+                  .logo
+                  h4.name.zer0 New Good Photographer
+                  span.coins  40 Coins
+                  .tx
+                    a.twitter-follow-button.tx(href="https://twitter.com/hackerhgl",data-show-count="false",data-show-screen-name="false",data-size="large") @Hackerhgl
+              script(async,src="//platform.twitter.com/widgets.js",charset="utf-8")
+      script(src='js/jquery.js')
+      script(src='js/bootstrap.js')
+      script(src='js/mobile.js')
+      script(src='js/dashboard.js')

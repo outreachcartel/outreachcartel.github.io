@@ -1,0 +1,249 @@
+/*CSS
+
+#body
+  .camps > .i.x
+    border-radius: 4px
+    overflow: hidden
+  .tStatus
+    margin-bottom: 0
+    border-radius: 0
+
+/*table tr:nth-child(even) td:nth-child(even){background: rgba(255, 255, 255, 0.5);}
+ *table tr:nth-child(even) td:nth-child(odd){background: rgba(0, 0, 0, 0.5);}
+ *table tr:nth-child(odd) td:nth-child(odd){background: rgba(255, 255, 255, 0.5);}
+ *table tr:nth-child(odd) td:nth-child(even){background: rgba(0, 0, 0, 0.5);}
+
+table
+  td[colspan]
+    text-align: center
+  &.table
+    background: #f9f9f9
+
+div.form ul li
+  width: 25%
+  list-style: none
+  float: left
+  background-color: #4e5154
+  color: #fff
+  padding: 1em 0 1em 2.1em
+  // color: #ff4c01
+  position: relative
+  font-size: 1.1em
+  transition: color 600ms ease,background 600ms ease
+  &:hover,&.active
+    background: #676768
+    // color: #4e5154
+    cursor: pointer
+  &::before
+    border-left: 1.66em solid #f44336
+    border-top: 1.66em solid rgba(0, 0, 0, 0)
+    border-bottom: 1.66em solid rgba(0, 0, 0, 0)
+    border-left: 1.66em solid #ff4c02
+    content: ''
+    display: inline-block
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+
+.chartBase
+  margin-top: 6em
+
+.pie-chart
+  width: 25%
+
+/*Create Campaing Form
+.form
+  form
+    padding: 2em 0
+    display: none
+    &.active
+      display: block
+    h1.zer0
+      margin-bottom: 0.5em
+    .e
+      color: red
+      margin: 0.4em 0 0 0.6em
+
+    select
+      font-size: 1.4em
+      width: 140px
+      &.sub
+        width: 90px
+      &:focus
+        outline: none
+        border-color: rgba(255,76,2,0.5)
+        box-shadow: 0 0 4px 1px rgba(255,76,2,1)
+      option
+        font-size: 0.7em
+    .pageLink
+      margin-top: 1em
+    .button
+      display: inline-block
+      background: #fff
+      color: #ff4c02
+      font-size: 1.2em
+      font-weight: 600
+      border: 3px solid #ff4c02
+      border-radius: 6px
+      padding: 0.4em 1.4em
+      -webkit-transition: background 400ms, color 400ms
+      -moz-transition: background 400ms, color 400ms
+      -ms-transition: background 400ms, color 400ms
+      -o-transition: background 400ms, color 400ms
+      transition: background 400ms, color 400ms
+      cursor: pointer
+      &:hover
+        background: #ff4c02
+        color: #fff
+      &:focus
+        outline: none
+    .intrestList
+      width: 100%
+      .intrestItem
+        cursor: pointer
+        font-size: 1.2em
+        &.dropdown
+          &:hover .subList
+            display: block
+          .subList
+            font-size: 0.9em
+            display: none
+            padding-left: 1em
+            .subItem
+              &:hover
+                background: rgba(0, 0, 0, 0.2)
+
+.formRem
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5)
+  .box
+    background: #fff
+    .header
+      padding: 0
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+      .pillBase
+        max-width: 1000px
+        margin: auto
+      .i.block
+        padding: 1.5em 0 1.5em 2em
+        width: 25%
+        cursor: pointer
+        &:hover , &.active
+          background: rgba(0,0,0,0.09)
+        .circle
+          background: #ff4c02
+          border-radius: 50%
+          width: 2em
+          height: 2em
+          span
+            position: relative
+            top: 4px
+            color: #FFF
+            font-weight: 600
+        .text
+          font-weight: 600
+          font-size: 1.2em
+          margin: 2px 0 0 10px
+
+    .body
+      .form
+        form
+          padding: 0
+          // input[type=checkbox]
+          //   background: red
+          //   color: red
+          //   &:not(:checked)
+          //     padding: 1em
+          //     background: yellow
+          .form-group
+            margin-bottom: 1em
+          .campEnd
+            padding-left: 10px
+        .chips
+          margin-top: 1em
+          .chip
+            background: rgba(0, 0, 0, 0.1)
+            float: left
+            padding: 0.5em 2.2em 0.5em 1em
+            margin: 0 1em 1em 0
+            border-radius: 4px
+            position: relative
+            font-weight: bold
+            cursor: pointer
+            transition: background 400ms
+            &:hover
+              background: rgba(0, 0, 0, 0.2)
+            .icon
+              position: absolute
+              top: 5px
+              right: 8px
+              font-size: 1.2em
+              .fa
+                color: #000
+                &:hover
+                  color: #333
+
+
+        .formBase
+          max-width: 1000px
+          width: 90%
+          padding: 1em 0
+          margin: auto
+        .form-control
+          border-radius: 0
+          &:focus
+            border-color: #999999
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0)
+
+@media (max-width: 768px)
+  .formRem
+    .box
+      .header
+        overflow-y: hidden
+        .pillBase
+        .i.block
+          padding-left: 0
+          .circle
+            margin: auto
+            float: none
+            span
+              position: relative
+              top: 4px
+              color: #FFF
+              font-weight: 600
+          .text
+            margin: auto
+            margin-top: 5px
+            float: none
+      .body
+        .form
+          form
+            .form-group
+              .campEnd
+                padding-left: 0
+              .rewarde
+                margin-bottom: 3.3em
+              label.campdlabel
+                padding: 5px 0 0 0
+              .rewarde ~ .err
+                margin-top: 0em
+              &.dbudget
+                margin-bottom: 2.8em
+@media (max-width: 991px)
+  .pie-chart
+    width: 50%
+    margin-bottom: 1em
+
+@media (max-width: 481px)
+  .pie-chart
+    width: 90%
+    margin: auto
+    margin-bottom: 1em
+
+  .formRem
+    .box
+      .header
+        overflow-y: hidden
+        .pillBase
+        .i.block
+          padding-left: 0

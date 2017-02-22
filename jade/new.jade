@@ -1,0 +1,221 @@
+doctype html
+html(dir='ltr', lang='en-US')
+    head
+        meta(http-equiv='content-type', content='text/html; charset=utf-8')
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic', rel='stylesheet', type='text/css')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        //if lt IE 9
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js')
+            script(src='scripts/respond.js')
+            script(src='scripts/html5shiv.js')
+        link(rel='stylesheet', href='css/bootstrap.css', type='text/css')
+        link(rel='stylesheet', href='css/style.css', type='text/css')
+        link(rel='stylesheet', href='css/carouselFade.css', type='text/css')
+        link(rel='stylesheet', href='css/animate.css', type='text/css')
+        link(rel='stylesheet', href='https://use.fontawesome.com/347a1bde59.css')
+        link(rel='icon', href='images/favicon.ico', type='image/x-icon')
+        title Outreach Cartel
+    body
+        section#header
+            .navbar.navbar-fixed-top
+                .container
+                    .navbar-header
+                        button.navbar-toggle(data-target='#ex', data-toggle='collapse')
+                            i.fa.fa-bars
+                        a.navbar-brand.zer0(href='index.html')
+                            img(src='images/logo.png')
+                    #ex.collapse.navbar-collapse
+                        ul.nav.navbar-nav.navbar-right
+                            li.active
+                                a(href='#/') Home
+                            li
+                                a(href='#/') Benifits
+                            li
+                                a(href='#/') Services
+                            li
+                                a(href='#/') Contact US
+                            li
+                                a(href='#/') Sign In
+            .text
+                h1 Disrupting the Digital Marketing
+            video.video#video(playsinline='', autoplay='', muted='', loop='')
+                source(src='video/ad.mp4')
+        section#how
+            .container
+                h1 HOW IT WORKS?
+                .col-sm-6.col-md-3
+                    .box
+                        .icon
+                            .animation
+                            i.fa.fa-user
+                        .text
+                            h2 #1
+                            h4 Sign Up on our website
+                .col-sm-6.col-md-3
+                    .box
+                        .icon
+                            .animation
+                            i.fa.fa-lightbulb-o
+                        .text
+                            h2 #2
+                            h4  Create and manage your AD campaign
+                .col-sm-6.col-md-3
+                    .box
+                        .icon
+                            .animation
+                            i.fa.fa-mobile
+                        .text
+                            h2 #3
+                            h4 Connect with your target audience
+                .col-sm-6.col-md-3
+                    .box
+                        .icon
+                            .animation
+                            i.fa.fa-line-chart
+                        .text
+                            h2 #4
+                            h4 Get detailed analytics about your campaign
+        section#how
+            .container
+                h1 Our Services
+                .col-sm-6.col-md-3
+                    .box
+                        .icon
+                            .animation
+                            i.fa.fa-facebook
+                        .text
+                            h4 Facebook
+                .col-sm-6.col-md-3
+                    .box
+                        .bg
+                        .icon
+                            .animation
+                            i.fa.fa-twitter
+                        .text
+                            h4 Twitter
+                .col-sm-6.col-md-3
+                    .box
+                        .icon
+                            .animation
+                            i.fa.fa-youtube-play
+                        .text
+                            h4 Youtube
+                .col-sm-6.col-md-3
+                    .box
+                        .icon
+                            .animation
+                            i.fa.fa-instagram
+                        .text
+                            h4 Instagram
+        section#remoffers
+            .container.text-center
+                h1  What we offer you?
+            .i.container
+                .float-left.box
+                    img(src='images/i/i3.png')
+                    h3 Dedicated Marketing Channel
+                    p Our dedicated platform will run your campaigns on social media.
+                .float-left.box
+                    img(src='images/i/i2.png')
+                    h3 Targeted Reach
+                    p Reach your target audience with our verified users and make your campaigns go viral!
+                .float-left.box
+                    img(src='images/i/i1.png')
+                    h3 Data Analytics
+                    p Our powerful data analytics keep you updated about your campaign in real time.
+        section#stats.stats
+            .box
+                .v
+                    .icon
+                        i.fa.fa-user-plus
+                    .no 200+
+                    .barx
+                    .text Advertising Companies
+                .bg
+            .box
+                .v
+                    .icon
+                        i.fa.fa-users
+                    .no 9000+
+                    .barx
+                    .text Registerd Users
+                .bg
+            .box
+                .v
+                    .icon
+                        i.fa.fa-cubes
+                    .no 500+
+                    .barx
+                    .text No Of Acive Campaigns
+                .bg
+            .box
+                .v
+                    .icon
+                        i.fa.fa-money
+                    .no 3500+
+                    .barx
+                    .text Coupons Available
+                .bg
+        section#testimonials
+            .container
+                .i.text-center
+                    h1 Testimonials
+                    .barx.i
+                #myCarousel.carousel.slide.carousel-fade(data-ride='carousel')
+                    ol.carousel-indicators
+                        li.active(data-slide-to='0', data-target='#myCarousel')
+                        li(data-slide-to='1', data-target='#myCarousel')
+                        li(data-slide-to='2', data-target='#myCarousel')
+                    .carousel-inner
+                        .item.active
+                            .carousel-caption
+                                img.profile(src='images/SteveJobs.jpg')
+                                .text
+                                    p.quote.font-secondary
+                                        | Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?
+                                    p.name Steve Jobs
+                                    p.company Apple Inc.
+                        .item
+                            .carousel-caption
+                                img.profile(src='images/BillGates.jpg')
+                                .text
+                                    p.quote.font-secondary
+                                        | Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?
+                                    p.name Bill Gates
+                                    p.company Micrososft.
+                        .item
+                            .carousel-caption
+                                img.profile(src='images/DennisRitchie.jpg')
+                                .text
+                                    p.quote.font-secondary
+                                        | Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?
+                                    p.name Denis Richard
+                                    p.company C Language
+
+        section#footer
+            .container.i
+                h1.text-center Message Us
+                form
+                    .form-group.col-sm-6
+                        input.form-control(type="text")
+                        label Your Name
+                    .form-group.col-sm-6
+                        input.form-control(type="email")
+                        label Email
+                    .form-group.col-sm-12
+                        textarea.form-control
+                        label Subject
+
+        section#copyright
+            .container.i
+                p.zer0.float-left
+                    | Copyrights &copy; 2016 All Rights Reserved by Outreach Cartel.
+                p.float-right.hidden-xs
+                    a(href="mailto:") hello@Outreachcartel.com 
+                    a(href="") +92 300 2200221
+
+        script(src='js/jquery.js')
+        script(src='js/bootstrap.js')
+        script(src='js/mobile.js')
+        script(src='js/script.js')

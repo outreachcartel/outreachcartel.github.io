@@ -1,0 +1,247 @@
+doctype html
+html(dir='ltr', lang='en-US')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|CreteRound:400italic', rel='stylesheet', type='text/css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    //if lt IE 9
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js')
+      | \
+      script(src='scripts/respond.js')
+      script(src='scripts/html5shiv.js')
+    link(rel='icon', href='images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='css/bootstrap.css', type='text/css')
+    link(rel='stylesheet', href='css/carouselFade.css', type='text/css')
+    link(rel='stylesheet', href='css/animate.css', type='text/css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/347a1bde59.css')
+    link(rel='stylesheet', href='css/style.css', type='text/css')
+    link(rel='stylesheet', href='css/dashboard.css', type='text/css')
+    link(rel='stylesheet', href='css/client.css', type='text/css')
+    title Outreach Cartel
+  body
+    section#header
+      .sideNav
+        input#ico(type='checkbox', style='display: none;')
+        span.sideIcon.aleft
+          label(for='ico')
+            li.fa.fa-bars
+        .navLogo.aleft
+          img(src='images/logo.png')
+        .sideBar.aleft
+          .userDetail.visible-xs
+            img(src="images/BillGates.jpg")
+            h3.text-left.name Fahad Moten
+          .linkBar
+            .visible-xs
+              a
+                .links
+                  li.fa.fa-usd
+                  |  Coins 
+                  small
+                    small  259
+    
+              a
+                .links
+                  li.fa.fa-file-o
+                  |  Tasks 
+                  small
+                    small  10
+    
+              a(href='')
+                .links
+                  li.fa.fa-user-o
+                  |   Profile
+              
+              a(href='')
+                .links
+                  li.fa.fa-gear
+                  |   Settings
+              
+              a(href='')
+                .links
+                  li.fa.fa-power-off
+                  |   Log Out
+            a(href='advertiser.html')
+              .links
+                li.fa.fa-dashboard
+                |   Dashboard
+            a(href='campaings.html')
+              .links
+                li.fa.fa-file.trs
+                |   Campaings
+                .dropdown.i
+                  a(href='createCampaing.html')
+                    .item Create
+                  .item All Campaings
+                  .item Active
+                  .item Pending
+                  .item Finished
+            a
+              .links
+                li.fa.fa-area-chart
+                |   Analytics
+            a(href='deposit.html')
+              .links
+                li.fa.fa-usd
+                |   Deposit
+      .navbar.navbar-fixed-top
+        .container.i
+          ul.float-right.zer0
+            .i.hidden-xs
+              li.float-left.link O`Coins : 259
+              li.float-left.link tasks Availble : 10
+              li.dropdown.float-left.link
+                img.profile(src='images/BillGates.jpg')
+                |  Fahad 
+                strong.caret
+                ul.menu
+                  li Profile
+                  li Settings
+                  li Logout
+    section#body
+      .container.lc
+        .bg
+          h1
+            | Hello,
+            br
+            |  Welcome Back Fahad
+        ol.breadcrumb
+          li
+            a(href='advertiser.html')
+              span.fa.fa-home
+              |  Home
+          li
+            a(href='campaings.html')
+              span.fa.fa-file
+              |  Campaings
+          li.active
+            a(href='createCampaing.html')  Create Campaing
+        .i.formRem
+          .box.zer0
+            .header.zer0
+              .pillBase.i
+                .i.block.float-left.text-center.active
+                  .circle.float-left
+                    span 1
+                  .text.float-left Details
+                .i.block.float-left.text-center
+                  .circle.float-left
+                    span 2
+                  .text.float-left Audience
+                .i.block.float-left.text-center
+                  .circle.float-left
+                    span 3
+                  .text.float-left Rewards
+                .i.block.float-left.text-center
+                  .circle.float-left
+                    span 4
+                  .text.float-left Conformation
+            .body
+              .form
+                form.active
+                  .formBase
+                    .form-group.zer0
+                      input.form-control.campaingName(type='text',placeholder='Campaing Name')
+                      .e(data-e="1")
+                    .form-group
+                      select.campaingType
+                        option(value="0") Select Type
+                        option(value="facebook") facebook
+                        option(value="twitter") twitter
+                        option(value="youtube") youtube
+                        option(value="website") website
+                      select.subOptions.sub
+                      .e(data-e="1")
+                    .form-group
+                      input.form-control.pageLink(type="url",placeholder="Link")
+                      .e(data-e="1")
+                    .form-group
+                      .button.submit1(type="button") Next
+                form
+                  .formBase.i
+                    .form-group
+                      input.form-control.audienceLocation#txtPlaces(type="text",placeholder="Audience Location")
+                      .chips.i
+                    .form-group.col-sm-12.zer0
+                      h3 Age
+                      .col-sm-6
+                        .col-xs-6
+                          input(type="checkbox",id="checkbx1",class="audienceAge",value="-18")
+                          label(for="checkbx1") under 18
+                        .col-xs-6
+                          input(type="checkbox",id="checkbx2",class="audienceAge",value="18-24")
+                          label(for="checkbx2") 18-24
+                        .col-xs-6
+                          input(type="checkbox",id="checkbx3",class="audienceAge",value="24-40")
+                          label(for="checkbx3") 24-40
+                        .col-xs-6
+                          input(type="checkbox",id="checkbx4",class="audienceAge",value="40-60")
+                          label(for="checkbx4") 46-60
+                    .form-group.col-sm-12.zer0
+                      h3 Gender
+                      .col-sm-6
+                        .col-xs-6
+                          input(type="checkbox",id="checkbax1",class="audienceGender",value="male")
+                          label(for="checkbax1") male
+                        .col-xs-6
+                          input(type="checkbox",id="checkbax2",class="audienceGender",value="female")
+                          label(for="checkbax2") female
+                    .form-group.col-sm-12.zer0.audienceIntrestGroup
+                      h3.zer0 Intrest
+                      .col-sm-12.zer0.i
+                    .form-group.col-sm-12
+                      .button.submit2 Next
+                      .button Save
+                form
+                  .formBase.i
+                    .form-group.col-sm-12.zer0
+                      input.rewardsPrice.form-control(type="number",placeholder="Rewards")
+                      .e("data-e","1")
+                    .form-group.col-sm-12.zer0.dbudget
+                      .col-sm-6.zer0.rewarde
+                        label.campdlabel.col-xs-4.zer0(for="start") Campaing Start
+                        .col-xs-8.zer0
+                          input.rewardsStartDate.form-control#start(type="date")
+                      .col-sm-6.zer0
+                        label.campdlabel.campEnd.col-xs-4.zer0(for="end") Campaing End
+                        .col-xs-8.zer0
+                          input.rewardsEndDate.form-control#end(type="date")
+                      .col-sm-12.zer0.err
+                        .e(data-e="1")
+                    .form-group.col-xs-12.zer0
+                      input.form-control.rewardsBudget(type="text",placeholder="Daily Budget")
+                      inp
+                    .form-group.col-xs-12.zer0
+                      h3.zer0 Details
+                      .col-sm-6.i.zer0
+                        .table-reponsive
+                          table.table
+                            tr.campName
+                              td Campaing Name
+                              td 
+                            tr.campperiod
+                              td Campaing Peroid
+                              td.v 
+                            tr.totalBudget
+                              td Total Buget
+                              td.v
+                            tr.dailyReach
+                              td Daily Reach 
+                              td.v
+                            tr.totalReach
+                              td Total Reach 
+                              td.v
+                    .form-group.col-xs-12.zer0
+                      .button.submit3 Next
+                    //- .form-group
+                form
+                  .formBase.i
+                    .form-group.zer0.col-sm-12
+                      h1.zer0 Conformation 
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.js')
+    script(src='js/mobile.js')
+    script(src='js/dashboard.js')
+    script(type='text/javascript',src='http://maps.googleapis.com/maps/api/js?key=AIzaSyAvcnCGBNpf1uaak8TvU-r8k-HmC37gfxw&libraries=places')
+    script(src='js/campaing.js')
